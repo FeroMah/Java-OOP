@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Scanner sc = new Scanner(System.in);
-        Method[] allMethods = BlackBoxInt.class.getDeclaredMethods();
+//        Method[] allMethods = BlackBoxInt.class.getDeclaredMethods();
         Constructor classConstructor = BlackBoxInt.class.getDeclaredConstructor();
         classConstructor.setAccessible(true);
         BlackBoxInt newBlackBoxInt = (BlackBoxInt) classConstructor.newInstance();
